@@ -47,7 +47,9 @@ buttonClick('second','two')
 function goBack() {
     let backButton = document.getElementById('goback')
     backButton.addEventListener('click',
-    window.history.back())
+    function () {window.history.back()})
   }
 
-goBack()
+
+
+  goBack()
